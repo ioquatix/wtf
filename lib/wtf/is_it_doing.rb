@@ -4,6 +4,7 @@
 # Copyright, 2024, by Samuel Williams.
 
 module WTF
+	# Wrap an object such that all method calls are logged to $stderr.
 	def self.is_it_doing?(object)
 		log_all_the_things = Module.new
 		log_all_the_things.include(IsItDoing)
